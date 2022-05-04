@@ -2,6 +2,26 @@
   text-decoration: line-through;
 }
 
+
+.input-field{
+  font-weight: bold;
+  padding: 15px ;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-field input{
+  border-radius: 10px;
+  height: 30px;
+  margin: 5px;
+}
+.input-field button{
+  border-radius: 10px;
+  height: 30px;
+  margin: 5px;
+}
 .todo-container{
   background-color: rgb(76, 81, 80);
   border-radius: 10px;
@@ -10,7 +30,6 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .todo-container ul{
   list-style: none;
   

@@ -11,8 +11,14 @@
 </head>
 <body>
   <div id="app" class="container">
+    
+    <div class="input-field">
+      <input type="text" name=""  v-model="newTask" placeholder="Type to add a new element in the list" id="">
+      <button @click="addTask(newTask)"> Add </button>
+    </div>
 
     <div class="todo-container">
+
 
       <ul>
 
