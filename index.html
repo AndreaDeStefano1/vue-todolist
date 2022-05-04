@@ -12,9 +12,18 @@
 <body>
   <div id="app" class="container">
 
-    <ul>
-      <li v-for="todo in toDoList" :class="todo.done ? 'done' : '' ">{{todo.text}}</li>
-    </ul>
+    <div class="todo-container">
+
+      <ul>
+
+        <li v-for="(todo,index) in toDoList" >
+          <span :class="todo.done ? 'done' : '' ">{{todo.text}}</span>
+          <i @click="remove(index)" class="fa-solid fa-xmark"></i>
+        </li>
+
+      </ul>
+
+    </div>
 
   </div>
 

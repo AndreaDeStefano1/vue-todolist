@@ -16,5 +16,11 @@ const app = new Vue({
         done: false
       }
     ]
+  },
+
+  methods: {
+    remove(i){
+      this.toDoList.splice(i , 1)
+    }
   }
 })

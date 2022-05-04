@@ -1,3 +1,25 @@
 .done{
   text-decoration: line-through;
 }
+
+.todo-container{
+  background-color: rgb(76, 81, 80);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 15px ;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.todo-container ul{
+  list-style: none;
+  
+}
+
+.todo-container ul li{
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
