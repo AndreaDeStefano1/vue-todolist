@@ -21,11 +21,11 @@ const app = new Vue({
 
   methods: {
     remove(i){
-      this.toDoList.splice(i , 1)
+      this.toDoList.splice(i , 1);
     },
     addTask(newTask){
-      this.toDoList.push({text: `${newTask}`, done: 'false' ,});
-      this.newTask = ''
+      this.toDoList.push({text: `${newTask}`, done: false ,});
+      this.newTask = '';
    },
   }
 })

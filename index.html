@@ -13,7 +13,7 @@
   <div id="app" class="container">
     
     <div class="input-field">
-      <input type="text" name=""  v-model="newTask" placeholder="Type to add a new element in the list" id="">
+      <input type="text" @keyup.enter="addTask(newTask)" name=""  v-model="newTask" placeholder="Type to add a new element in the list"  id="">
       <button @click="addTask(newTask)"> Add </button>
     </div>
 
@@ -22,8 +22,9 @@
 
       <ul>
 
-        <li v-for="(todo,index) in toDoList" >
-          <span :class="todo.done ? 'done' : '' ">{{todo.text}}</span>
+        <li v-for="(todo,index) in toDoList"  >
+          <span  @click="todo.done = !todo.done"
+          :class="{'done' : todo.done}">{{todo.text}}</span>
           <i @click="remove(index)" class="fa-solid fa-xmark"></i>
         </li>
 
